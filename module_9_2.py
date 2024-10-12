@@ -7,5 +7,5 @@ print(first_result)
 second_result = [(i, j) for i in first_strings for j in second_strings if len(i) == len(j)]
 print(second_result)
 
-third_result = {i: len(i) for i in first_strings + second_strings if len(i) // 2}
+third_result = {i: len(i) for i in first_strings + second_strings if not len(i) % 2}
 print(third_result)
